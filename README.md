@@ -6,8 +6,8 @@
 |:-------------:|:-------------:|:-------------:|
 | [Emine ŞENER](https://github.com/EmineSener) | [Özlem Arslan](https://github.com/ozlemarslann) | [Gizem Avcı](https://github.com/gizemavci0) |
 
-| ![Emine's Avatar](https://github.com/kadircapkinn.png) | ![Ozlem's Avatar](https://github.com/oqanxc.png) | |
-
-| [Kadir Çapkın](https://github.com/kadircapkinn) | [Okan Uzun](https://github.com/oqanxc) |  |
+| ![Emine's Avatar](https://github.com/kadircapkinn.png) | ![Ozlem's Avatar](https://github.com/oqanxc.png) |
+|:-------------:|:-------------:|
+| [Kadir Çapkın](https://github.com/kadircapkinn) | [Okan Uzun](https://github.com/oqanxc) |  
 
 
