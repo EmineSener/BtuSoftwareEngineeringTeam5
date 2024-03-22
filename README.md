@@ -13,7 +13,7 @@
 ## Story Cards
 [This document](https://github.com/EmineSener/BtuSoftwareEngineeringTeam5/blob/main/software_engineering_story_cards.pdf) contains the story cards.
 
-## To Do | Deadline:
+## To Do | Deadline: 1.04.2024
 * Complete story card 1, story card 2 and story card 3.
 * Web templates with Flask.
 * Find a useful bootstrap.
