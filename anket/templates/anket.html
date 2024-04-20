@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Kullanıcı Aktiviteleri Anketi</title>
+  </head>
+  <body>
+    <h1>Kullanıcı Aktiviteleri Anketi</h1>
+    <form action="/user/anket" method="POST">
+      <ol>
+        <li>
+          <p>
+            Hangi tür aktiviteyi öncelikli olarak yapmayı tercih edersiniz?
+          </p>
+          <label>
+            <input type="radio" name="Soru_1_Aktivite" value="1" />Videolar
+          </label>
+          <br />
+          <label>
+            <input type="radio" name="Soru_1_Aktivite" value="2" />Filmler
+          </label>
+          <br />
+          <label>
+            <input type="radio" name="Soru_1_Aktivite" value="3" />Kitaplar
+          </label>
+          <br />
+          <label>
+            <input type="radio" name="Soru_1_Aktivite" value="4" />Nesneler
+          </label
+          ><br />
+          <label>
+            <input type="radio" name="Soru_1_Aktivite" value="5" />Bloglar
+          </label
+          ><br />
+          <label>
+            <input type="radio" name="Soru_1_Aktivite" value="6" />Haberler
+          </label
+          ><br />
+          <label>
+            <input type="radio" name="Soru_1_Aktivite" value="7" />Müzik
+          </label
+          ><br />
+        </li>
+        <li>
+          <p>En çok hangi tür videoları izlemeyi seversiniz?</p>
+          <label>
+            <input type="radio" name="Soru_2_Video" value="8" />Eğitim
+          </label>
+          <br />
+          <label>
+            <input type="radio" name="Soru_2_Video" value="9" />Eğlence
+          </label>
+          <br />
+          <label>
+            <input type="radio" name="Soru_2_Video" value="10" />
+            Belgesel</label
+          ><br />
+          <label
+            ><input type="radio" name="Soru_2_Video" value="11" />
+            Müzik</label
+          ><br />
+        </li>
+        <li>
+          <p>Hangi film türlerini daha çok tercih edersiniz?</p>
+          <label
+            ><input type="radio" name="Soru_3_Film" value="12" />
+            Aksiyon</label
+          ><br />
+          <label
+            ><input type="radio" name="Soru_3_Film" value="13" />
+            Komedi</label
+          ><br />
+          <label
+            ><input type="radio" name="Soru_3_Film" value="14" />
+            Dram</label
+          ><br />
+          <label
+            ><input type="radio" name="Soru_3_Film" value="15" />
+            Bilim Kurgu</label
+          ><br />
+        </li>
+        <li>
+          <p>Hangi tür kitapları okumaktan daha fazla keyif alırsınız?</p>
+          <label
+            ><input type="radio" name="Soru_4_Kitap" value="16" />
+            Roman</label
+          ><br />
+          <label
+            ><input type="radio" name="Soru_4_Kitap" value="17" />Kurgu dışı
+          </label
+          ><br />
+          <label
+            ><input type="radio" name="Soru_4_Kitap" value="18"/>Bilim kurgu/Fantastik
+          </label
+          ><br />
+          <label
+            ><input type="radio" name="Soru_4_Kitap" value="19" />Tarih
+          </label
+          ><br />
+        </li>
+        <li>
+          <p>Hangi nesnelerle ilgilenmeyi daha çok tercih edersiniz?</p>
+          <label
+          ><input type="radio" name="Soru_5_Nesne" value="20"/>
+            Teknolojik cihazlar</label
+          ><br />
+          <label
+            ><input
+              type="radio"
+              name="Soru_5_Nesne"
+              value="21"
+            />
+            Antika eşyalar</label
+          ><br />
+          <label
+            ><input
+              type="radio"
+              name="Soru_5_Nesne"
+              value="22"
+            />
+            Hobi malzemeleri</label
+          ><br />
+          <label
+            ><input
+              type="radio"
+              name="Soru_5_Nesne"
+              value="23"
+            />
+            Sanat eserleri</label
+          ><br />
+        </li>
+        <li>
+          <p>Hangi tür blogları daha çok takip etmeyi tercih edersiniz?</p>
+          <label
+            ><input type="radio" name="Soru_6_Blog" value="24" />
+            Seyahat</label
+          ><br />
+          <label
+            ><input
+              type="radio"
+              name="Soru_6_Blog"
+              value="25"
+            />
+            Sağlık ve fitness</label
+          ><br />
+          <label
+            ><input type="radio" name="Soru_6_Blog" value="26" />
+            Teknoloji</label
+          ><br />
+          <label
+            ><input
+              type="radio"
+              name="Soru_6_Blog"
+              value="27"
+            />
+            Moda ve güzellik</label
+          ><br />
+        </li>
+        <li>
+          <p>Hangi tür haberleri daha çok okumayı tercih edersiniz?</p>
+          <label
+            ><input
+              type="radio"
+              name="Soru_7_Haber"
+              value="28"
+            />
+            Ulusal ve uluslararası politika</label
+          ><br />
+          <label
+            ><input
+              type="radio"
+              name="Soru_7_Haber"
+              value="29"
+            />
+            Teknoloji ve inovasyon</label
+          ><br />
+          <label
+            ><input
+              type="radio"
+              name="Soru_7_Haber"
+              value="30"
+            />
+            Sağlık ve yaşam</label
+          ><br />
+          <label
+            ><input type="radio" name="Soru_7_Haber" value="31" />
+            Spor</label
+          ><br />
+        </li>
+        <li>
+          <p>Hangi tür müzikleri dinlemeyi daha çok seversiniz?</p>
+          <label
+            ><input type="radio" name="Soru_8_Muzik_Tip" value="32" />
+            Pop</label
+          ><br />
+          <label
+            ><input type="radio" name="Soru_8_Muzik_Tip" value="33" />
+            Rock</label
+          ><br />
+          <label
+            ><input type="radio" name="Soru_8_Muzik_Tip" value="34" />
+            Rap</label
+          ><br />
+          <label
+            ><input type="radio" name="Soru_8_Muzik_Tip" value="35" />
+            Klasik</label
+          ><br />
+        </li>
+        <li>
+          <p>Hangi tür müzikleri dinlerken daha çok keyif alırsınız?</p>
+          <label
+            ><input
+              type="radio"
+              name="Soru_9_Muzik_Tarzi"
+              value="36"
+            />
+            Enerjik ve ritmik</label
+          ><br />
+          <label
+            ><input
+              type="radio"
+              name="Soru_9_Muzik_Tarzi"
+              value="37"
+            />
+            Duygusal ve hüzünlü</label
+          ><br />
+          <label
+            ><input
+              type="radio"
+              name="Soru_9_Muzik_Tarzi"
+              value="38"
+            />
+            Rahatlatıcı ve meditatif</label
+          ><br />
+          <label
+            ><input
+              type="radio"
+              name="Soru_9_Muzik_Tarzi"
+              value="39"
+            />
+            Hızlı ve tempolu</label
+          ><br />
+        </li>
+      </ol>
+
+      <input type="submit" value="Gönder" />
+    </form>
+  </body>
+</html>
