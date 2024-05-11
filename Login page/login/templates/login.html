@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sign Up Form by Colorlib</title>
+    <title>Giriş Yap</title>
 
     <!-- Font Icon -->
     <link rel="stylesheet" href="/static/login-bootstrap/fonts/material-icon/css/material-design-iconic-font.min.css">
@@ -24,6 +24,7 @@
                     <div class="signin-image">
                         <figure><img src="/static/login-bootstrap/images/signin-image.jpg" alt="sing up image"></figure>
                         <a href="/user/register" class="signup-image-link">Hesap Oluştur</a>
+                        <a href="/user/change-password" class="signup-image-link">Şifremi Unuttum</a>
                     </div>
 
                     <div class="signin-form">
@@ -36,7 +37,7 @@
                         {% endfor %}
                         {% endif %}
                         {% endwith %}
-                        <h2 class="form-title">Test</h2>
+                        <h2 class="form-title">GIRIS</h2>
                         <form method="POST" class="register-form" id="login-form" action="/user/login">
                             <div class="form-group">
                                 <label for="your_name"><i class="zmdi zmdi-account material-icons-name"></i></label>
@@ -54,14 +55,6 @@
                                 <input type="submit" name="signin" id="signin" class="form-submit" value="Giris Yap"/>
                             </div>
                         </form>
-                        <div class="social-login">
-                            <span class="social-label">Or login with</span>
-                            <ul class="socials">
-                                <li><a href="#"><i class="display-flex-center zmdi zmdi-facebook"></i></a></li>
-                                <li><a href="#"><i class="display-flex-center zmdi zmdi-twitter"></i></a></li>
-                                <li><a href="#"><i class="display-flex-center zmdi zmdi-google"></i></a></li>
-                            </ul>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -69,7 +62,26 @@
 
     </div>
 
-    <!-- JS -->
+    <!-- Beni hatırla seçeneğinde olusturulmus bir çerez varsa tarayıcıda bu çerezler sayesinde doğrudan bilgiler girilir -->
+    <script>
+        window.onload = function() {
+            var username = getCookie("username");
+            var password = getCookie("password");
+
+            if (username && password) {
+                document.getElementById("your_name").value = username;
+                document.getElementById("your_password").value = password;
+            }
+        };
+
+        // Belirli bir isme sahip çerezin değerini al
+        function getCookie(name) {
+            var value = "; " + document.cookie;
+            // console.log(document.cookie); document cookie mevcut cookie dizesi döndürüyor. (; username="kadir")tarzında
+            var parts = value.split("; " + name + "="); // ; cookiename="test" şeklinde ayırarak array'e dönüştürüyor.
+            if (parts.length == 2) return parts.pop().split(";").shift();
+        }
+    </script>
     <script src="/static/login-bootstrap/vendor/jquery/jquery.min.js"></script>
     <script src="/static/login-bootstrap/js/main.js"></script>
 </body><!-- This templates was made by Colorlib (https://colorlib.com) -->

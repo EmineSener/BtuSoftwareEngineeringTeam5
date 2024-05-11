@@ -266,7 +266,9 @@ body {
   margin-bottom: 33px; }
 
 .signup-image {
-  margin-top: 45px; }
+  margin-top: 45px; 
+  text-align: center;
+}
 
 figure {
   margin-bottom: 50px;
@@ -295,8 +297,9 @@ figure {
 .signup-image-link {
   font-size: 14px;
   color: #222;
-  display: block;
-  text-align: center; }
+  display: inline-block;
+  text-align: center; 
+}
 
 .term-service {
   font-size: 13px;
@@ -513,7 +516,9 @@ label.valid {
 .signin-image {
   margin-left: 110px;
   margin-right: 20px;
-  margin-top: 10px; }
+  margin-top: 10px; 
+  text-align: center;
+}
 
 @media screen and (max-width: 1200px) {
   .container {
