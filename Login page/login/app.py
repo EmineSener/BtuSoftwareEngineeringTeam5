@@ -1,4 +1,4 @@
-from flask import Flask,request,session,redirect,url_for,render_template, flash,make_response
+from flask import Flask,request,session,redirect,url_for,render_template, flash,make_response,abort
 from flask_sqlalchemy import SQLAlchemy # Orm gerekli kütüphane
 from flask_bcrypt import Bcrypt #Hashing gerekli kütüphane
 from flask_session import Session #Oturum için session classi eklendi
@@ -52,6 +52,15 @@ def home():
 
     return render_template('index-2.html')
 
+def is_valid(name,min_length, max_length):
+    # Başında veya sonunda boşluk varsa False döndür
+    # Birden fazla boşluk içeriyorsa False döndür
+    if ' ' in name:
+        return False
+    if len(name) < min_length or len(name) > max_length:
+        return False
+    return True
+
 @app.route('/user/register',methods=["POST","GET"])
 def register():
     if 'user_id' in session:  # Oturum zaten açıksa
@@ -66,8 +75,11 @@ def register():
         password=request.form.get('password')
         re_password = request.form.get('re_password')
 
-        if username=="" or email=="" or password=="" or name=="" or surname=="" or age=="":
+        if username==None or email==None or password==None or name==None or surname==None or age==None:      
             flash('Lütfen bütün alanlari doldurun','danger')
+            return redirect('/user/register')
+        elif not is_valid(name, 2, 50) or not is_valid(surname, 2, 50) or not is_valid(username, 4, 20) or not is_valid(password, 6, 20):
+            flash("Geçersiz giriş. Lütfen belirtilen karakter sınırlarına uygun ve bosluk karekter kullanmadan kayıt yapın.","danger")
             return redirect('/user/register')
         else:
             is_email=Users().query.filter_by(email=email).first()
@@ -110,7 +122,6 @@ def login():
             if user:
                 if bcrypt.check_password_hash(user.password,password):
                     session['user_id'] = user.id #session sözlüğünde user_id eklendi
-                    flash("Kullanici Girisi basarili",'success')
                     if remember_me: # "Beni Hatırla" seçeneği işaretlendiğinde, kullanıcı adı ve şifreyi tarayıcı çerezine kaydet
                         resp = make_response(redirect('/user/index'))
                         resp.set_cookie("username", username, max_age=app.config["REMEMBER_COOKIE_DURATION"])
@@ -146,8 +157,7 @@ def changePassword():
             return redirect('/user/change-password')
         user = Users().query.filter(Users.email == your_email).first() # filter ile filter by farkı
         if user:
-            user.reset_code = ((random.random() * 1000000) - 10000)
-            user.reset_code = math.floor(user.reset_code)
+            user.reset_code = random.randint(100000, 999999)
             db.session.commit()
             
             msg = Message("Sifre Sifirlama Onay Kodu",sender="testnodejs652@gmail.com",recipients=[your_email])
@@ -175,6 +185,9 @@ def confirmPassword():
             flash("Lutfen Tum alanlari doldurun","danger")
             return redirect(url_for('confirmPassword',from_changePw=True))
         user = Users().query.filter(Users.reset_code == confirm_code).first()
+        if not is_valid(new_password, 6, 20):
+            flash("Geçersiz Sifre. Lutfen en az 6 karekter uzunlugunda ve bosluk karekteri kullanmadan sifrenizi girin.")
+            return redirect(url_for('confirmPassword',from_changePw=True))
         if user:
             if new_password==re_password:
                 hashed_password = bcrypt.generate_password_hash(new_password).decode('utf-8')
@@ -214,5 +227,44 @@ def logout():
         return redirect('/')
     return redirect(url_for('login')) # Bu sayfalar için 404 sayfası yapılması daha mantıklı(?=)
 
+#Edit profile 
+@app.route('/user/edit-profile',methods=["POST","GET"])
+def edit_profile():
+    if request.method =='GET':
+        if 'user_id' in session:
+            user_id = session['user_id']
+            user = Users.query.get(user_id)
+            return render_template('editProfile.html',user=user)
+        else:
+            abort(404)
+    else:
+        name = request.form.get('name')
+        surname = request.form.get('surname')
+        age = request.form.get('age')
+        username = request.form.get('username')
+        email = request.form.get('email')
+
+        user_id = session['user_id']
+        user = Users.query.get(user_id)
+        
+        if username==None or email==None or name==None or surname==None:      
+            flash('Lütfen bütün alanlari doldurun','danger')
+            return redirect('/user/edit-profile')
+        elif not is_valid(name, 2, 50) or not is_valid(surname, 2, 50) or not is_valid(username, 4, 20):
+            flash("Geçersiz giriş. Lütfen belirtilen karakter sınırlarına uygun ve bosluk karekter kullanmadan kayıt yapın.","danger")
+            return redirect('/user/edit-profile')
+        else:
+                user.name = name
+                user.surname = surname
+                user.age = age
+                user.username = username
+                user.email = email
+                db.session.commit()
+                flash("Bilgileriniz basariyla guncellendi.","success")
+                return redirect('/user/edit-profile')
+#Not Found router
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template('404.html'),404
 if __name__ == "__main__":
     app.run(debug=True)
