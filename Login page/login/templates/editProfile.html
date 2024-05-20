@@ -47,7 +47,7 @@
 <!-- start of sidenav -->
 <aside><div class="sidenav position-sticky d-flex flex-column ">
     <!-- buraya logo eklenecek -->
-    <a class="navbar-brand logo" href="index.html">
+    <a class="navbar-brand logo" href="/user/index">
         <img src="/static/layout-bootstrap/images/logo.png" alt="">
     </a>
     <!-- end of navbar-brand -->
@@ -137,18 +137,17 @@
                             {% endfor %}
                             {% endif %}
                             {% endwith %}
-                          </form>   
                             <h1 class="text-white add-letter-space my-4 text-center">
                               Hesap Bilgileri
                             </h1>
-                            <form action="/user/edit-profile" method="POST" class="bg-dark p-4 rounded">
+                            <form action="/user/edit-profile" method="POST" class="bg-dark p-4 rounded" enctype="multipart/form-data">
                               <!-- Profil Fotoğrafı Değiştirme Kısmı -->
                               <div class="profile-picture form-group">
                                 <label for="profile-photo" class="text-white">
                                     <img src="{{user.profileimage}}" alt="Profile Picture" id="profile-image" />
                                 </label>
                                 <input
-                                  name="profile-photo"
+                                  name="profile_photo"
                                   type="file"
                                   class="form-control-file text-white"
                                   id="profile-photo"
@@ -201,13 +200,13 @@
                               <button type="submit" class="btn btn-primary w-100">
                                 Güncelle
                               </button>
-
+                            </form>
                         </div>
                 </div>
                 <div class="col-lg-4 col-md-5">
                     <div class="widget text-center">
                         <img class="author-thumb-sm rounded-circle d-block mx-auto" src="{{user.profileimage}}" alt="">
-                        <h2 class="widget-title text-white d-inline-block mt-4">Sadece {{ user.username }}</h2>
+                        <h2 class="widget-title text-white d-inline-block mt-4">Sadece {{ user.name }}</h2>
                       
                         <p class="mt-4"><h4>İçeriklerim yalnızca sana özgü. Neyi sevdiğini neyi sevmediğini çok iyi biliyorum. Senin için hazırladığım analizlerime de göz atmak ister misin?</h4></p>
                         

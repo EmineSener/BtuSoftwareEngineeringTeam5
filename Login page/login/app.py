@@ -3,9 +3,9 @@ from flask_sqlalchemy import SQLAlchemy # Orm gerekli kütüphane
 from flask_bcrypt import Bcrypt #Hashing gerekli kütüphane
 from flask_session import Session #Oturum için session classi eklendi
 from flask_mail import Mail, Message #Mail gönderimi için kütüphane
-import random,math
-import psycopg2
-import re
+from werkzeug.utils import secure_filename
+import os
+import random
 
 
 app = Flask(__name__)
@@ -14,9 +14,17 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:123qwe123@localho
 app.config["SESSION_PERMANENT"]=False # Tarayıcı kapandığında oturum kapanıcak
 app.config["SESSION_TYPE"]='sqlalchemy' # Oturum verileri postgresql üzerinden işlenicek
 app.config["REMEMBER_COOKIE_DURATION"] = 3600 * 24 * 30  # 30 Günlük çerez
+app.config['UPLOAD_FOLDER'] = 'Login Page/login/static/layout-bootstrap/ppimages/' # Yüklenen dosyaların hangi klasörde tutulacağının yolu
+app.config['ALLOWED_EXTENSIONS'] = {'png', 'jpg', 'jpeg', 'gif'}
+app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024
 db=SQLAlchemy(app)
 bcrypt = Bcrypt(app)
 
+if not os.path.exists(app.config['UPLOAD_FOLDER']):
+    os.makedirs(app.config['UPLOAD_FOLDER'])
+
+def allowed_file(filename):
+    return '.' in filename and filename.rsplit('.', 1)[1].lower() in app.config['ALLOWED_EXTENSIONS']
 #Mail config
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'
 app.config['MAIL_PORT'] = 587
@@ -242,11 +250,16 @@ def edit_profile():
         surname = request.form.get('surname')
         age = request.form.get('age')
         username = request.form.get('username')
-        email = request.form.get('email')
-
+        profile_photo = request.files.get('profile_photo')
         user_id = session['user_id']
         user = Users.query.get(user_id)
-        
+
+        if profile_photo and allowed_file(profile_photo.filename):
+            filename = secure_filename(profile_photo.filename)
+            profile_photo.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+            profile_photo_url = os.path.join(app.config['UPLOAD_FOLDER'], filename)
+            user.profileimage = '/static/layout-bootstrap/ppimages/' + profile_photo.filename
+
         if username==None or name==None or surname==None:      
             flash('Lütfen bütün alanlari doldurun','danger')
             return redirect('/user/edit-profile')
