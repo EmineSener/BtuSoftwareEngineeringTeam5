@@ -50,7 +50,7 @@ def home():
     if 'user_id' in session:
         return redirect(url_for('userIndex'))
 
-    return render_template('index-2.html')
+    return render_template('visitorIndex.html')
 
 def is_valid(name,min_length, max_length):
     # Başında veya sonunda boşluk varsa False döndür
@@ -93,7 +93,7 @@ def register():
                 flash("Parolalar eslesmiyor",'danger')
             else:
                 hash_password = bcrypt.generate_password_hash(password).decode('utf-8')
-                user=Users(name=name,surname=surname,age=age,username=username,email=email,password=hash_password)
+                user=Users(name=name,surname=surname,age=age,username=username,email=email,password=hash_password,profileimage='/static/layout-bootstrap/ppimages/pp.jpg')
                 db.session.add(user)
                 db.session.commit()
                 flash('Kullanici Kaydi Basariyla Olusturuldu!','success')
@@ -247,7 +247,7 @@ def edit_profile():
         user_id = session['user_id']
         user = Users.query.get(user_id)
         
-        if username==None or email==None or name==None or surname==None:      
+        if username==None or name==None or surname==None:      
             flash('Lütfen bütün alanlari doldurun','danger')
             return redirect('/user/edit-profile')
         elif not is_valid(name, 2, 50) or not is_valid(surname, 2, 50) or not is_valid(username, 4, 20):
@@ -258,10 +258,17 @@ def edit_profile():
                 user.surname = surname
                 user.age = age
                 user.username = username
-                user.email = email
                 db.session.commit()
                 flash("Bilgileriniz basariyla guncellendi.","success")
                 return redirect('/user/edit-profile')
+@app.route('/user/my-profile',methods=['GET'])
+def my_profile():
+    if 'user_id' in session:
+        user_id = session['user_id']
+        user = Users.query.get(user_id)
+        return render_template('my-profile.html',user=user)
+    else:
+        abort(404)
 #Not Found router
 @app.errorhandler(404)
 def page_not_found(e):

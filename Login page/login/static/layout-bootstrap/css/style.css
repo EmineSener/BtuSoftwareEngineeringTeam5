@@ -574,7 +574,6 @@ ul, li {
   filter: grayscale(0.5);
   -webkit-filter: grayscale(0.5);
 }
-
 .post-meta li a {
   color: #ffffff;
   font-weight: 500;
@@ -737,3 +736,27 @@ footer ul li:last-child a {
   margin-bottom: 0;
 }
 /*# sourceMappingURL=style.css.map */
+
+.logo{
+  margin-bottom: 70px;
+}
+
+.profile-picture {
+  width: 250px; /* Profil fotoğrafı boyutunu değiştir */
+  height: 250px; /* Profil fotoğrafı boyutunu değiştir */
+  border-radius: 50%;
+  overflow: hidden;
+  margin: auto;
+  margin-bottom: 20px;
+  background-color: #ffffff; /* Profil fotoğrafı arka plan rengi */
+}
+.profile-picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#profile-photo{
+  display: none;
+}
+
+

@@ -10,7 +10,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Galaxy - Personal Blog Template</title>
+    <title>BREAKBORED</title>
 
     <!-- mobile responsive meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -28,8 +28,8 @@
     <link href="/static/layout-bootstrap/css/style.css" rel="stylesheet">
 
     <!--Favicon-->
-    <link rel="shortcut icon" href="/static/layout-bootstrap/images/favicon.png" type="image/x-icon">
-    <link rel="icon" href="/static/layout-bootstrap/images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/static/layout-bootstrap/images/logo.png" type="image/x-icon">
+    <link rel="icon" href="/static/layout-bootstrap/images/logo.png" type="image/x-icon">
 
 </head>
 <body>
@@ -45,44 +45,44 @@
     <section class="d-flex">
   
 <!-- start of sidenav -->
-<aside><div class="sidenav position-sticky d-flex flex-column justify-content-between">
-   
+<aside><div class="sidenav position-sticky d-flex flex-column ">
     <!-- buraya logo eklenecek -->
+    <a class="navbar-brand logo" href="index.html">
+        <img src="/static/layout-bootstrap/images/logo.png" alt="">
+    </a>
     <!-- end of navbar-brand -->
 
     <div class="navbar navbar-dark my-4 p-0 font-primary">
         <ul class="navbar-nav w-100">
             <li class="nav-item active">
-                <a class="nav-link text-white px-0 pt-0" href="index.html">Home</a>
+                <a class="nav-link text-white px-0 pt-0" href="/user/index">Ana Sayfa</a>
             </li>
             <li class="nav-item ">
-                <a class="nav-link text-white px-0" href="about.html">Videos</a>
+                <a class="nav-link text-white px-0" href="about.html">Videolar</a>
             </li>
             <li class="nav-item ">
-                <a class="nav-link text-white px-0" href="about.html">Films</a>
+                <a class="nav-link text-white px-0" href="about.html">Filmler</a>
             </li>
             <li class="nav-item ">
-                <a class="nav-link text-white px-0" href="about.html">Books</a>
+                <a class="nav-link text-white px-0" href="about.html">Kitaplar</a>
             </li>
             <li class="nav-item ">
-                <a class="nav-link text-white px-0" href="contact.html">Articles</a>
+                <a class="nav-link text-white px-0" href="contact.html">Makaleler</a>
             </li>
             <li class="nav-item ">
-                <a class="nav-link text-white px-0" href="contact.html">Blogs</a>
+                <a class="nav-link text-white px-0" href="contact.html">Bloglar</a>
             </li>
             <li class="nav-item ">
                 <a class="nav-link text-white px-0" href="contact.html">News</a>
             </li>
             <li class="nav-item ">
-                <a class="nav-link text-white px-0" href="contact.html">Musics</a>
+                <a class="nav-link text-white px-0" href="contact.html">Müzikler</a>
             </li>
             
             <li class="nav-item  accordion">
                 <div id="drop-menu" class="drop-menu collapse">
-                    <a class="d-block " href="index-2.html">Home 2</a>
                     <a class="d-block " href="/user/edit-profile">Hesap Ayarları</a>
                     <a class="d-block " href="/user/my-profile">Hesap Bilgileri</a>
-                    <a class="d-block " href="privacy.html">Gizlilik &amp; Güvenlik</a>
                 </div>
                 <a class="nav-link text-white" href="#!" role="button" data-toggle="collapse" data-target="#drop-menu" aria-expanded="false" aria-controls="drop-menu">Hesabın</a>
             </li>
@@ -255,7 +255,7 @@
                 </div>
                 <div class="col-lg-4 col-md-5">
                     <div class="widget text-center">
-                        <img class="author-thumb-sm rounded-circle d-block mx-auto" src="/static/layout-bootstrap/images/author-sm.png" alt="">
+                        <img class="author-thumb-sm rounded-circle d-block mx-auto" src="{{user.profileimage}}" alt="">
                         <h2 class="widget-title text-white d-inline-block mt-4">Sadece {{ user.username }}</h2>
                       
                         <p class="mt-4"><h4>İçeriklerim yalnızca sana özgü. Neyi sevdiğini neyi sevmediğini çok iyi biliyorum. Senin için hazırladığım analizlerime de göz atmak ister misin?</h4></p>
