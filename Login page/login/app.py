@@ -44,7 +44,7 @@ class Users(db.Model):
     username=db.Column(db.String(255),unique=True,nullable=False)
     email=db.Column(db.String(255),unique=True,nullable=False)
     password=db.Column(db.String(255),nullable=False)
-    reset_code = db.Column(db.Integer,nullable=True)
+    reset_code = db.Column(db.String(255),nullable=True)
     
     def __repr__(self):
         return f'User("{self.id}","{self.name}","{self.surname}","{self.age}","{self.profileimage}","{self.username}","{self.email}","{self.reset_code}")' # User model üzerinde attirbute degerlerine ulasabilmeyi saglar.
@@ -165,7 +165,7 @@ def changePassword():
             return redirect('/user/change-password')
         user = Users().query.filter(Users.email == your_email).first() # filter ile filter by farkı
         if user:
-            user.reset_code = random.randint(100000, 999999)
+            user.reset_code = str(random.randint(100000, 999999))
             db.session.commit()
             
             msg = Message("Sifre Sifirlama Onay Kodu",sender="testnodejs652@gmail.com",recipients=[your_email])
@@ -194,7 +194,7 @@ def confirmPassword():
             return redirect(url_for('confirmPassword',from_changePw=True))
         user = Users().query.filter(Users.reset_code == confirm_code).first()
         if not is_valid(new_password, 6, 20):
-            flash("Geçersiz Sifre. Lutfen en az 6 karekter uzunlugunda ve bosluk karekteri kullanmadan sifrenizi girin.")
+            flash("Geçersiz Sifre. Lutfen en az 6 karekter uzunlugunda ve bosluk karekteri kullanmadan sifrenizi girin.",'danger')
             return redirect(url_for('confirmPassword',from_changePw=True))
         if user:
             if new_password==re_password:
@@ -266,14 +266,17 @@ def edit_profile():
         elif not is_valid(name, 2, 50) or not is_valid(surname, 2, 50) or not is_valid(username, 4, 20):
             flash("Geçersiz giriş. Lütfen belirtilen karakter sınırlarına uygun ve bosluk karekter kullanmadan kayıt yapın.","danger")
             return redirect('/user/edit-profile')
+        elif(Users().query.filter(Users.username == username).first()):
+            flash("Bu kullanici adi sistemde mevcut","danger")
+            return redirect('/user/edit-profile')
         else:
-                user.name = name
-                user.surname = surname
-                user.age = age
-                user.username = username
-                db.session.commit()
-                flash("Bilgileriniz basariyla guncellendi.","success")
-                return redirect('/user/edit-profile')
+            user.name = name
+            user.surname = surname
+            user.age = age
+            user.username = username
+            db.session.commit()
+            flash("Bilgileriniz basariyla guncellendi.","success")
+            return redirect('/user/edit-profile')
 @app.route('/user/my-profile',methods=['GET'])
 def my_profile():
     if 'user_id' in session:

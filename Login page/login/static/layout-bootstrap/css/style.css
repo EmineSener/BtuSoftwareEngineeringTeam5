@@ -743,12 +743,10 @@ footer ul li:last-child a {
 
 .profile-picture {
   width: 250px; /* Profil fotoğrafı boyutunu değiştir */
-  height: 250px; /* Profil fotoğrafı boyutunu değiştir */
-  border-radius: 50%;
+  border-radius: 100%;
   overflow: hidden;
   margin: auto;
   margin-bottom: 20px;
-  background-color: #ffffff; /* Profil fotoğrafı arka plan rengi */
 }
 .profile-picture img {
   width: 100%;
