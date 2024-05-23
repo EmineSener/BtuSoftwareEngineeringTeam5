@@ -35,23 +35,137 @@ BreakBored offers users another analysis: program analysis.
 If the user wishes, they can save their program and review the analysis made by BreakBored about their program.
 ```
 
+## BreakBored | Goals
+```
+1.Enhance Users' Free Time Productivity:
+Help users fill their free time with quality and enjoyable activities by providing recommendations for movies, music, and books.
 
 
+2.Personalize User Experiences:
+Offer personalized content recommendations based on analyses of users' previous experiences within the application.
+Provide unique experiences every time by conducting new analyses with each user login.
+
+
+3.Perform Sentiment Analysis and Provide Recommendations:
+Analyze users' emotional states through text and images, and offer advice based on these analyses.
+Recommend content that matches users' moods to meet their emotional needs.
+
+
+4.Provide Program Analysis:
+Allow users to save their daily schedules and offer analyses based on these schedules.
+Help users manage their schedules more efficiently and systematically.
+
+
+5.Offer User-Specific Analyses:
+Not only provide content recommendations but also conduct various analyses to contribute to users' personal development.
+Continuously improve the application experience to better understand users and offer solutions that meet their needs.
+
+6.Increase User Engagement and Satisfaction:
+Enhance engagement with systems that monitor the time users spend on the homepage.
+Ensure the application remains consistently appealing and useful by presenting new and interesting content with each login
+A system that never pauses despite running many artificial intelligence applications
+```
+
+
+
+## BreakBored | Team Members
+
+
+
+<table>
+  <tr>
+    <td style="text-align: center;">
+        <img src="https://github.com/EmineSener.png" alt="Member 1"  width="200"  ><br>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Emine ŞENER <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AI Developer</p>
+    </td>
+    <td>
+      <ul>
+     <li> Management of project operation</li>
+     <li>Development of music, book, and movie recommendation systems.</li>
+     <li>Ensuring that suggestions are transferred to the user dynamically.</li>
+     <li>Development of mood analysis artificial intelligence system.</li>
+     <li>Ensuring that the necessary inputs are received for mood analysis and the results are displayed.</li>
+     <li>Development of a machine learning system that analyzes programs.</li>
+     <li>Ensuring that the necessary inputs are received for program analysis and the results are displayed.</li>
+     <li> Documentation development
+      </ul>
+    </td>  
+   
+  </tr>
+  <tr>
+    <td style="text-align: center;">
+            <img src="https://github.com/ozlemarslann.png" alt="Member 1"  width="200"  ><br>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Özlem Arslan <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp Frontend Developer</p>
+        </td>
+        <td>
+        <ul> 
+           <li>Development of the application frontend section</li>
+           <li>Providing the overall user interface design of the application</li>
+           <li>Displaying Artificial Intelligence analysis results dynamically on the interface</li>
+</ul>
+   Documentation development
+</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">
+            <img src="https://github.com/oqanxc.png" alt="Member 1"  width="200"  ><br>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Okan Uzun <br>
+           &nbsp;&nbsp;&nbsp;&nbsp;Frontend Developer</p>
+        </td>
+        <td>
+          <ul>
+          <li>Development of the application frontend section</li> 
+             <li>Editing the data to be displayed on the interface </li>
+             <li>Documentation development</li>
+          </ul>
+</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">
+            <img src="https://github.com/gizemavci0.png" alt="Member 1"  width="200"  ><br>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gizem Avcı <br>
+           &nbsp;&nbsp;&nbsp;&nbsp;Full-Stack Developer</p>
+        </td>
+        <td>
+          <ul>
+         <li> Improving the database system</li>
+        <li>Improving login and registration processes</li>
+    <li>Documentation development</li>
+          </ul>
+</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">
+            <img src="https://github.com/kadircapkinn.png" alt="Member 1"  width="200"  ><br>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kadir Çapkın <br>
+           &nbsp;&nbsp;&nbsp;&nbsp;Full-Stack Developer</p>
+        </td>
+        <td>
+          <ul>
+           <li> Developing the appication database system</li> 
+           <li>Developing login and registration processes</li>
+           <li>Documentation development</li>   
+          </ul>
+</td>
+  </tr>
+</table>
+
+## BreakBored | Project Development 
+* Story cards are used to outline the tasks, user needs, and functional requirements that need to be done to develop a product or feature. You can access our story cards [here](https://github.com/EmineSener/BtuSoftwareEngineeringTeam5/blob/main/ProjectDevelopment/software_engineering_story_cards.pdf)
+* Class diagrams define the classes, objects, relationships, and behaviors of the software system. You can access our class diagram [here]
+* Use cases help identify and understand requirements by explaining how users will use the system and how the system should behave. You can access our class diagram [here].
+* Application architecture is a design document that defines the basic structural features, components, and relationships of a software application.  You can access our application architecture [here].
+* User guide teach users about the features, functions, installation and operation of the product. You can access our user guide [here].
+* The job plan determines project objectives, processes, resources, and schedule. You can access our job plan [here]
 [This document](https://github.com/EmineSener/BtuSoftwareEngineeringTeam5/blob/main/SoftwareEngineeringTeam5.pdf) contains the project title and project details.
+* Requirements document defines and documents the requirements of a project or product. You can access our requirements document [here]
 
-## Team Members
-| ![Emine's Avatar](https://github.com/EmineSener.png) | ![Ozlem's Avatar](https://github.com/ozlemarslann.png) | ![Okan's Avatar](https://github.com/oqanxc.png) |
-|:-------------:|:-------------:|:-------------:|
-| [Emine ŞENER](https://github.com/EmineSener) | [Özlem Arslan](https://github.com/ozlemarslann) | [Okan Uzun](https://github.com/oqanxc) |
+## BreakBored | Our Meetings
+* [07.03.2024, Meeting #1](https://github.com/bounswe/bounswe2018group9/wiki/Meeting-%2317---19.12.2018)
+* 
 
-| ![Kadir's Avatar](https://github.com/kadircapkinn.png) |  ![Gizem's Avatar](https://github.com/gizemavci0.png)|
-|:-------------:|:-------------:|
-| [Kadir Çapkın](https://github.com/kadircapkinn) | [Gizem Avcı](https://github.com/gizemavci0) | 
-
-## Story Cards
-[This document](https://github.com/EmineSener/BtuSoftwareEngineeringTeam5/blob/main/software_engineering_story_cards.pdf) contains the story cards.
-
-## To Do | Deadline: 1.04.2024
 * Complete story card 1, story card 2 and story card 3.
 * Web templates with Flask.
 * Find a useful bootstrap.
