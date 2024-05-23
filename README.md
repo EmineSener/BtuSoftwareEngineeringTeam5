@@ -163,7 +163,8 @@ A system that never pauses despite running many artificial intelligence applicat
 * Requirements document defines and documents the requirements of a project or product. You can access our requirements document [here]
 
 ## BreakBored | Our Meetings
-* [07.03.2024, Meeting #1](https://github.com/bounswe/bounswe2018group9/wiki/Meeting-%2317---19.12.2018)
+* [07.03.2024, Meeting #1](https://github.com/EmineSener/BtuSoftwareEngineeringTeam5/blob/main/Meetings/meeting1.md)
+* [08.03.2024, Meeting #2](https://github.com/EmineSener/BtuSoftwareEngineeringTeam5/blob/main/Meetings/meeting2.md)
 * 
 
 * Complete story card 1, story card 2 and story card 3.
