@@ -165,7 +165,16 @@ A system that never pauses despite running many artificial intelligence applicat
 ## BreakBored | Our Meetings
 * [06.03.2024, Meeting #1](https://github.com/EmineSener/BtuSoftwareEngineeringTeam5/blob/main/Meetings/meeting1.md)
 * [08.03.2024, Meeting #2](https://github.com/EmineSener/BtuSoftwareEngineeringTeam5/blob/main/Meetings/meeting2.md)
-* [14.03.2024, Meeting #2](https://github.com/EmineSener/BtuSoftwareEngineeringTeam5/blob/main/Meetings/meeting3.md)
+* [14.03.2024, Meeting #3](https://github.com/EmineSener/BtuSoftwareEngineeringTeam5/blob/main/Meetings/meeting3.md)
+* [21.03.2024, Meeting #4](https://github.com/EmineSener/BtuSoftwareEngineeringTeam5/blob/main/Meetings/meeting4.md)
+* [28.03.2024, Meeting #5](https://github.com/EmineSener/BtuSoftwareEngineeringTeam5/blob/main/Meetings/meeting5.md)
+* [04.04.2024, Meeting #6](https://github.com/EmineSener/BtuSoftwareEngineeringTeam5/blob/main/Meetings/meeting6.md)
+* [18.04.2024, Meeting #7](https://github.com/EmineSener/BtuSoftwareEngineeringTeam5/blob/main/Meetings/meeting7.md)
+* [25.04.2024, Meeting #8](https://github.com/EmineSener/BtuSoftwareEngineeringTeam5/blob/main/Meetings/meeting8.md)
+* [02.05.2024, Meeting #9](https://github.com/EmineSener/BtuSoftwareEngineeringTeam5/blob/main/Meetings/meeting9.md)
+* [00.05.2024, Meeting #10](https://github.com/EmineSener/BtuSoftwareEngineeringTeam5/blob/main/Meetings/meeting10.md)
+* [16.05.2024, Meeting #11](https://github.com/EmineSener/BtuSoftwareEngineeringTeam5/blob/main/Meetings/meeting11.md)
+
 
 * Complete story card 1, story card 2 and story card 3.
 * Web templates with Flask.
