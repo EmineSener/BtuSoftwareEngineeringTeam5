@@ -223,5 +223,5 @@ You can learn more about all of them in the table below.
 </table>
 
 
-## BreakBored | Technologies Used
+
 
