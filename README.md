@@ -183,5 +183,32 @@ Below are all our meetings and their notes so far.
 * [00.05.2024, Meeting #10](https://github.com/EmineSener/BtuSoftwareEngineeringTeam5/blob/main/Meetings/meeting10.md)
 * [16.05.2024, Meeting #11](https://github.com/EmineSener/BtuSoftwareEngineeringTeam5/blob/main/Meetings/meeting11.md)
 
+## BreakBored | Technologies Used
+We develop our project by adopting the MVC architecture. You can check the Personality_Free_Time_APP folder for the project codes. 
 
+The application codes consist of three separate files: Model, View, and Controller. 
+
+You can learn more about all of them in the table below.
+
+<table>
+  <thead>
+    <tr>
+      <th>Model</th>
+      <th>View</th>
+      <th>Controller</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data</td>
+      <td>Presentation</td>
+      <td>User Input</td>
+    </tr>
+    <tr>
+      <td>Represents the data structure</td>
+      <td>Displays the data to the user</td>
+      <td>Accepts user input and updates the model and view</td>
+    </tr>
+  </tbody>
+</table>
  
