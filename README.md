@@ -183,7 +183,7 @@ Below are all our meetings and their notes so far.
 * [16.05.2024, Meeting #11](https://github.com/EmineSener/BtuSoftwareEngineeringTeam5/blob/main/Meetings/meeting11.md)
 
 ## BreakBored | Project Overview
-We develop our project by adopting the MVC architecture. You can check the Personality_Free_Time_APP folder for the project codes. 
+We develop our project by adopting the MVC architecture. You can check the [Personality_Free_Time_APP](https://github.com/EmineSener/BtuSoftwareEngineeringTeam5/tree/main/PersonalityFreeTimeApp) folder for the project codes. 
 
 The application codes consist of three separate files: Model, View, and Controller. 
 
@@ -212,7 +212,7 @@ You can learn more about all of them in the table below.
     <td>Controller</td>
     <td> 
       <ul>
-      <li> The most important parts of our application are located in this file: recommendation systems for user-specific content, analysis systems for the user's personal analysis, and the Flask page for managing the web application.  </li>
+      <li> The most important parts of our application are located in this file: recommendation Systems for user-specific content, analysis systems for the user's personal analysis, and the Flask page for managing the web application.  </li>
         <li> To provide fast results in recommendation systems, we prioritize making recommendations using Machine Learning techniques without relying on Deep Learning.  </li>
           <li> Since our application constantly performs new analyses for the user, artificial intelligence algorithms run in the background every time the user logs in.  </li>
         <li> To maintain high performance, we utilize threading techniques to both analyze the user and manage the user's interface interactions.</li>
