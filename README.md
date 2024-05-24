@@ -153,14 +153,13 @@ A system that never pauses despite running many artificial intelligence applicat
 </table>
 
 ## BreakBored | Project Development 
-* Story cards are used to outline the tasks, user needs, and functional requirements that need to be done to develop a product or feature. You can access our story cards [here](https://github.com/EmineSener/BtuSoftwareEngineeringTeam5/blob/main/ProjectDevelopment/software_engineering_story_cards.pdf)
+* Story cards are used to outline the tasks, user needs, and functional requirements that need to be done to develop a product or feature. You can access our story cards [here](https://github.com/EmineSener/BtuSoftwareEngineeringTeam5/blob/main/diagrams_and_plans/software_engineering_story_cards.pdf)
 * Class diagrams define the classes, objects, relationships, and behaviors of the software system. You can access our class diagram [here](https://github.com/EmineSener/BtuSoftwareEngineeringTeam5/blob/main/diagrams_and_plans/personality_free_time_class_diagram.pdf).
-* Use cases help identify and understand requirements by explaining how users will use the system and how the system should behave. You can access our class diagram [here].
+* Use cases help identify and understand requirements by explaining how users will use the system and how the system should behave. You can access our class diagram [here](https://github.com/EmineSener/BtuSoftwareEngineeringTeam5/blob/main/diagrams_and_plans/use_case.pdf).
 * Application architecture is a design document that defines the basic structural features, components, and relationships of a software application.  You can access our application architecture [here](https://github.com/EmineSener/BtuSoftwareEngineeringTeam5/blob/main/diagrams_and_plans/application_architecture.pdf).
 * User guide teach users about the features, functions, installation and operation of the product. You can access our user guide [here](https://github.com/EmineSener/BtuSoftwareEngineeringTeam5/blob/main/diagrams_and_plans/breakBored_user_guide_compressed.pdf).
-* The job plan determines project objectives, processes, resources, and schedule. You can access our job plan [here](.https://github.com/EmineSener/BtuSoftwareEngineeringTeam5/blob/main/diagrams_and_plans/software_engineering_break_bored_job_plan%20(1).pdf)
-[This document](https://github.com/EmineSener/BtuSoftwareEngineeringTeam5/blob/main/SoftwareEngineeringTeam5.pdf) contains the project title and project details.
-* Requirements document defines and documents the requirements of a project or product. You can access our requirements document [here]
+* The job plan determines project objectives, processes, resources, and schedule. You can access our job plan [here](https://github.com/EmineSener/BtuSoftwareEngineeringTeam5/blob/main/diagrams_and_plans/software_engineering_break_bored_job_plan.pdf)
+* Requirements document defines and documents the requirements of a project or product. You can access our requirements document [here](https://github.com/EmineSener/BtuSoftwareEngineeringTeam5/blob/main/diagrams_and_plans/requirement_document_team5.pdf)
 
 ## BreakBored | Our Meetings
 ```
