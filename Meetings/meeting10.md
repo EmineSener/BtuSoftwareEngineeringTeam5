@@ -1,4 +1,4 @@
-# Meeting 11 | 09.05.2024
+# Meeting 10 | 09.05.2024
 * Discussed the relationship between recommendation system diversity and performance.
 * Decided to make additions to the sign-up page.
 
