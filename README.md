@@ -183,7 +183,7 @@ Below are all our meetings and their notes so far.
 * [00.05.2024, Meeting #10](https://github.com/EmineSener/BtuSoftwareEngineeringTeam5/blob/main/Meetings/meeting10.md)
 * [16.05.2024, Meeting #11](https://github.com/EmineSener/BtuSoftwareEngineeringTeam5/blob/main/Meetings/meeting11.md)
 
-## BreakBored | Technologies Used
+## BreakBored | Project Overview
 We develop our project by adopting the MVC architecture. You can check the Personality_Free_Time_APP folder for the project codes. 
 
 The application codes consist of three separate files: Model, View, and Controller. 
@@ -191,24 +191,37 @@ The application codes consist of three separate files: Model, View, and Controll
 You can learn more about all of them in the table below.
 
 <table>
-  <thead>
-    <tr>
-      <th>Model</th>
-      <th>View</th>
-      <th>Controller</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Data</td>
-      <td>Presentation</td>
-      <td>User Input</td>
-    </tr>
-    <tr>
-      <td>Represents the data structure</td>
-      <td>Displays the data to the user</td>
-      <td>Accepts user input and updates the model and view</td>
-    </tr>
-  </tbody>
+  <tr>
+    <td>Model</td>
+    <td>
+      <ul>
+      <li> In the Model folder, we store the data used for analysis, our analysis results, and the design files required for the frontend layout.</li>
+   <li> We store our data in .csv format, which we use for training recommendation systems models, and our analysis results in .json and .pkl formats.</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>View</td>
+    <td>
+      <ul>
+      <li>  In the View folder, we have the .html pages necessary for all user interface operations in the web application. </li>
+        <li> Since the application offers different content to the user each time, all of our pages have a dynamic structure. </li>
+      </ul>
+      </td>
+  </tr>
+<tr>
+    <td>Controller</td>
+    <td> 
+      <ul>
+      <li> The most important parts of our application are located in this file: recommendation systems for user-specific content, analysis systems for the user's personal analysis, and the Flask page for managing the web application.  </li>
+        <li> To provide fast results in recommendation systems, we prioritize making recommendations using Machine Learning techniques without relying on Deep Learning.  </li>
+          <li> Since our application constantly performs new analyses for the user, artificial intelligence algorithms run in the background every time the user logs in.  </li>
+        <li> To maintain high performance, we utilize threading techniques to both analyze the user and manage the user's interface interactions.</li>
+        <li>  This approach allows us to achieve both speed and accuracy. </li>
+      </ul>
+      </td>
+</tr>
 </table>
- 
+
+
+## BreakBored | Technologies Used
