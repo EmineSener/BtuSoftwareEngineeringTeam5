@@ -179,7 +179,7 @@ Below are all our meetings and their notes so far.
 * [18.04.2024, Meeting #7](https://github.com/EmineSener/BtuSoftwareEngineeringTeam5/blob/main/Meetings/meeting7.md)
 * [25.04.2024, Meeting #8](https://github.com/EmineSener/BtuSoftwareEngineeringTeam5/blob/main/Meetings/meeting8.md)
 * [02.05.2024, Meeting #9](https://github.com/EmineSener/BtuSoftwareEngineeringTeam5/blob/main/Meetings/meeting9.md)
-* [00.05.2024, Meeting #10](https://github.com/EmineSener/BtuSoftwareEngineeringTeam5/blob/main/Meetings/meeting10.md)
+* [09.05.2024, Meeting #10](https://github.com/EmineSener/BtuSoftwareEngineeringTeam5/blob/main/Meetings/meeting10.md)
 * [16.05.2024, Meeting #11](https://github.com/EmineSener/BtuSoftwareEngineeringTeam5/blob/main/Meetings/meeting11.md)
 
 ## BreakBored | Project Overview
