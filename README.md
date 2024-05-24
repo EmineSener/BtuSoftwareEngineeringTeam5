@@ -176,10 +176,4 @@ A system that never pauses despite running many artificial intelligence applicat
 * [16.05.2024, Meeting #11](https://github.com/EmineSener/BtuSoftwareEngineeringTeam5/blob/main/Meetings/meeting11.md)
 
 
-
-* Explore useful database technology.
-* Create a database that include users table.
-* Model that analyse in personality.
-* Design a page that include questions and options for personality analyse.
-* Create a table that include user_id and users options in database.  
  
