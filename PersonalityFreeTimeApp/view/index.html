@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>BreakBored</title>
+
+    <!-- mobile responsive meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+    <!-- theme meta -->
+    <meta name="theme-name" content="galaxy" />
+
+    <!-- ** Plugins Needed for the Project ** -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="plugins/fontawesome/css/all.css">
+
+    <!-- Main Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="images/favicon.jpg" type="image/x-icon">
+    <link rel="icon" href="images/favicon.jpg" type="image/x-icon">
+
+    <style>
+        .navbar {
+            position: relative;
+       
+        }
+
+        .navbar-nav .nav-item.mt-3 {
+            margin-top: 10px; /* Butonların üstteki elemanlardan uzaklığını ayarlamak için */
+        }
+
+        .navbar-nav .nav-item.fixed-buttons-container {
+            position: fixed;
+            bottom: 20px; /* Sayfanın altından ne kadar uzakta olacağını ayarlar */
+            left: 20px; /* Sayfanın sağından ne kadar uzakta olacağını ayarlar */
+            z-index: 1000; /* Diğer elemanların üstünde görünmesini sağlar */
+        }
+
+        .navbar-nav .nav-item.fixed-buttons-container a {
+            display: block;
+            margin-bottom: 10px; /* İki buton arasında boşluk bırakmak için */
+        }
+    </style>
+
+</head>
+<body>
+    <!-- START preloader-wrapper -->
+    <div class="preloader-wrapper">
+        <div class="preloader-inner">
+            <div class="spinner-border text-red"></div>
+        </div>
+    </div>
+    <!-- END preloader-wrapper -->
+    
+    <!-- START main-wrapper -->
+    <section class="d-flex">
+  
+<!-- start of sidenav -->
+<aside><div class="sidenav position-sticky d-flex flex-column justify-content-between">
+    <a class="navbar-brand" href="index.html" class="logo">
+        <img style="display: inline-block; margin-left: 5px; border-radius: 50%"  src="images/logo.jpg" alt="">
+    </a>
+    <!-- end of navbar-brand -->
+
+    <div class="navbar navbar-dark my-4 p-0 font-primary">
+        <ul class="navbar-nav w-100">
+            <li class="nav-item ">
+                <a class="nav-link text-white px-0 pt-0" href="index.html">Kitaplar</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link text-white px-0" href="about.html">Filmler</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link text-white px-0" href="contact.html">Müzikler</a>
+            </li>
+         
+           
+           
+        </ul>
+    </div>
+    <!-- end of navbar -->
+
+    <ul class="list-inline nml-2">
+        <li class="list-inline-item">
+            <li class="nav-item mt-3">
+                <a href="post-details.html" class="btn btn-primary">Oturumu Kapat<img src="images/arrow-right.png" alt=""></a>
+            </li>
+        </li>
+        <li class="list-inline-item">
+            <li class="nav-item mt-3">
+                <a href="post-details.html" class="btn btn-primary">Hesap Ayarları <img src="images/arrow-right.png" alt=""></a>
+            </li>
+        </li>
+       
+       
+    </ul>
+    <!-- end of social-links -->
+</div></aside>
+
+        <div class="main-content">
+            <!-- start of mobile-nav -->
+            <header class="mobile-nav pt-4">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-6">
+                            <a href="index.html">
+                                <img src="images/logo.png" alt="">
+                            </a>
+                        </div>
+                        <div class="col-6 text-right">
+                            <button class="nav-toggle bg-transparent border text-white">
+                                <span class="fas fa-bars"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="nav-toggle-overlay"></div>
+            <!-- end of mobile-nav -->
+
+            <div class="container pt-4 mt-5">
+                <div class="row justify-content-between">
+                    <div class="col-lg-7">
+
+                        <!-- end of post-item -->
+
+                    
+
+                        <div class="card post-item bg-transparent border-0 mb-5">
+                            <a href="post-details.html">
+                                <img class="card-img-top rounded-0" src="img/serenad.jpg" alt="">
+                            </a>
+                            <div class="card-body px-0">
+                                <h2 class="card-title">
+                                    <a class="text-white opacity-75-onHover" href="post-details.html">Serenad</a>
+                                </h2>
+                                <ul class="post-meta mt-3">
+                                    <li class="d-inline-block">
+                                        <span class="fas fa-list-alt text-primary"></span>
+                                        <a class="ml-1" href="#">Kitap</a>
+                                    </li>
+                                </ul>
+                                <p class="card-text my-4">Serenad, insanın iç dünyasında müzikle dans eden bir roman; Zülfü Livaneli'nin kelimeleriyle kalplerde unutulmaz bir melodi bırakıyor</p>
+                                <a href="post-details.html" class="btn btn-primary">Okumaya Başla! <img src="images/arrow-right.png" alt=""></a>
+                            </div>
+                        </div>
+
+                        <div class="card post-item bg-transparent border-0 mb-5">
+                            <a href="post-details.html">
+                                <img class="card-img-top rounded-0" src="img/music.png" alt="">
+                            </a>
+                            <div class="card-body px-0">
+                                <h2 class="card-title">
+                                    <a class="text-white opacity-75-onHover" href="post-details.html">Hanfendi</a>
+                                </h2>
+                                <ul class="post-meta mt-3">
+                                    <li class="d-inline-block">
+                                        <span class="fas fa-list-alt text-primary"></span>
+                                        <a class="ml-1" href="#">Müzik</a>
+                                    </li>
+                                </ul>
+                                <p class="card-text my-4">Hanfendi duyguları hünerli bir şekilde dokuyarak dinleyicileri içsel bir yolculuğa çıkarıyor, melodileriyle ruhlara dokunuyor.</p>
+                                <a href="content_info.html" class="btn btn-primary">Dinle! <img src="images/arrow-right.png" alt=""></a>
+                            </div>
+                        </div>
+                        <!-- end of post-item -->
+                    </div>
+
+                    <div class="col-lg-4 col-md-5">
+                        <div class="widget text-center">
+                            <img class="author-thumb-sm rounded-circle d-block mx-auto" src="images/author-sm.png" alt="">
+                            <h2 class="widget-title text-white d-inline-block mt-4">Sadece Sen!</h2>
+                          
+                            <p class="mt-4"><h4>İçeriklerim yalnızca sana özgü. Neyi sevdiğini neyi sevmediğini çok iyi biliyorum. Senin için hazırladığım analizlerime de göz atmak ister misin?</h4></p>
+                            
+                           
+                        </div>
+                        <!-- end of author-widget -->
+    
+                        <div class="widget bg-dark p-4 text-center">
+                            <h2 class="widget-title text-white d-inline-block mt-4">Program Analizi</h2>
+                            
+                            <a href="post-details.html">
+                                <img class="card-img-top rounded-0" src="img/analyse.png" alt="">
+                            </a>
+                            
+                            <p class="mt-4">Duygu durumunu içerikler kadar günlük rutinin de belirliyor. Hemen programını kaydedebilir, bunun için analiz isteyebilirsin.</p>
+                            
+                            <form action="#">
+                                <div class="form-group">
+                                    
+                                    <button class="btn btn-primary">Programını Kaydet! <img src="images/arrow-right.png" alt=""></button>
+                                </div>
+                            </form>
+                        </div>
+    
+                        <div class="widget bg-dark p-4 text-center">
+                            <h2 class="widget-title text-white d-inline-block mt-4">Duygu Durum Analizi</h2>
+                            
+                            <a href="post-details.html">
+                                <img class="card-img-top rounded-0" src="img/emotion.png" alt="">
+                            </a>
+                            
+                            <p class="mt-4">Duygu durumun hızlı bir şekilde mi değişti. Hemen tespit edip içeriklerini güncelleyebilirim.</p>
+                            
+                            <form action="#">
+                                <div class="form-group">
+                                    
+                                    <button class="btn btn-primary">Duygu durumumu değiştir! <img src="images/arrow-right.png" alt=""></button>
+                                </div>
+                            </form>
+                        </div>
+    
+                        <!-- end of subscription-widget -->
+    
+                        <div class="widget">
+                            <div class="mb-5 text-center">
+                                <h2 class="widget-title text-white d-inline-block">Yeni Analizler</h2>
+                            </div>
+                            <div class="card post-item bg-transparent border-0 mb-5">
+                                <a href="post-details.html">
+                                    <img class="card-img-top rounded-0" src="img/huzur.png" alt="">
+                                </a>
+                                <div class="card-body px-0">
+                                    <h2 class="card-title">
+                                        <a class="text-white opacity-50-onHover" href="post-details.html"><h4>Son zamanlarda huzurlu hissediyorsun. Buna ödevlerini tam zamanında tamamlaman sebep oldu diye düşünüyorum. Bu konuda analizim hazır!</h4></a>
+                                    </h2>
+                                    <ul class="post-meta mt-3 mb-4">
+                                        <li class="d-inline-block mr-3">
+                                            <span class="fas fa-clock text-primary"></span>
+                                            <a class="ml-1" href="#">30 March, 2023</a>
+                                        </li>
+                                        <li class="d-inline-block">
+                                            <span class="fas fa-list-alt text-primary"></span>
+                                            <a class="ml-1" href="#">Program Analizi</a>
+                                        </li>
+                                    </ul>
+                                    <a href="post-details.html" class="btn btn-primary">Analizi Gör! <img src="images/arrow-right.png" alt=""></a>
+                                </div>
+                            </div>
+    
+                            <div class="card post-item bg-transparent border-0 mb-5">
+                                <a href="post-details.html">
+                                    <img class="card-img-top rounded-0" src="img/energic.png" alt="">
+                                </a>
+                                <div class="card-body px-0">
+                                    <h2 class="card-title">
+                                        <a class="text-white opacity-75-onHover" href="post-details.html"><h4>Kendini oldukça enerjik hissediyorsun. Bence bu kesinlikle sürekli Mabel Matiz şarkıları dinlediğin için. Hemen analizimi inceleyebilirsin!</h4></a>
+                                    </h2>
+                                    <ul class="post-meta mt-3 mb-4">
+                                        <li class="d-inline-block mr-3">
+                                            <span class="fas fa-clock text-primary"></span>
+                                            <a class="ml-1" href="#">30 March, 2023</a>
+                                        </li>
+                                        <li class="d-inline-block">
+                                            <span class="fas fa-list-alt text-primary"></span>
+                                            <a class="ml-1" href="#">İçerik Analizi</a>
+                                        </li>
+                                    </ul>
+                                    <a href="post-details.html" class="btn btn-primary">Analizi Gör! <img src="images/arrow-right.png" alt=""></a>
+                                </div>
+                            </div>
+    
+                            <!-- end of widget-post-item -->
+                            
+                            <!-- end of widget-post-item -->
+                        </div>
+    
+    
+                        <div class="widget">
+                            <div class="mb-5 text-center">
+                                <h2 class="widget-title text-white d-inline-block">Geçmiş Analizler</h2>
+                            </div>
+                            <div class="card post-item bg-transparent border-0 mb-5">
+                                <a href="post-details.html">
+                                    <img class="card-img-top rounded-0" src="img/gergin.png" alt="">
+                                </a>
+                                <div class="card-body px-0">
+                                    <h2 class="card-title">
+                                        <a class="text-white opacity-50-onHover" href="post-details.html"><h4>Geçen hafta kendini biraz gergin hissettin. Buna her gün toplantıya katılmanın sebep olduğunu düşünüyorum. Bununla ilgili bir analizim var.</h4></a>
+                                    </h2>
+                                    <ul class="post-meta mt-3 mb-4">
+                                        <li class="d-inline-block mr-3">
+                                            <span class="fas fa-clock text-primary"></span>
+                                            <a class="ml-1" href="#">20 March, 2023</a>
+                                        </li>
+                                        <li class="d-inline-block">
+                                            <span class="fas fa-list-alt text-primary"></span>
+                                            <a class="ml-1" href="#">Program Analizi</a>
+                                        </li>
+                                    </ul>
+                                    <a href="post-details.html" class="btn btn-primary">Analizi Gör! <img src="images/arrow-right.png" alt=""></a>
+                                </div>
+                            </div>
+    
+                            <div class="card post-item bg-transparent border-0 mb-5">
+                                <a href="post-details.html">
+                                    <img class="card-img-top rounded-0" src="img/deep.png" alt="">
+                                </a>
+                                <div class="card-body px-0">
+                                    <h2 class="card-title">
+                                        <a class="text-white opacity-75-onHover" href="post-details.html"><h4>Geçen hafta kendini biraz depresif hissettin. Buna sayfanda izlediğin filmin sebep olduğunu düşünüyorum. Hemen analizimi inceleyebilirsin!</h4></a>
+                                    </h2>
+                                    <ul class="post-meta mt-3 mb-4">
+                                        <li class="d-inline-block mr-3">
+                                            <span class="fas fa-clock text-primary"></span>
+                                            <a class="ml-1" href="#">20 March, 2023</a>
+                                        </li>
+                                        <li class="d-inline-block">
+                                            <span class="fas fa-list-alt text-primary"></span>
+                                            <a class="ml-1" href="#">İçerik Analizi</a>
+                                        </li>
+                                    </ul>
+                                    <a href="post-details.html" class="btn btn-primary">Analizi Gör! <img src="images/arrow-right.png" alt=""></a>
+                                </div>
+                            </div>
+    
+                            
+                            <!-- end of widget-post-item -->
+                        </div>
+                        <!-- end of post-items widget -->
+                    </div>
+                </div>
+            </div>
+    
+           
+        </div>
+                </div>
+            </div>
+
+           
+        </div>
+        <!-- end of main-content -->
+
+        <!-- start of to-top -->
+        <div class="scroll-top-to">
+            <span class="fas fa-chevron-up"></span>
+        </div>
+        <!-- end of to-top -->
+    </section>
+    <!-- END main-wrapper -->
+    <script src="plugins/jQuery/jquery.min.js"></script>
+    <script src="plugins/bootstrap/bootstrap.min.js"></script>
+    <script src="plugins/slick/slick.min.js"></script>
+    <script src="plugins/scrollmenu/scrollmenu.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
