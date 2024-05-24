@@ -185,7 +185,7 @@ Below are all our meetings and their notes so far.
 ## BreakBored | Project Overview
 We develop our project by adopting the MVC architecture. You can check the [Personality_Free_Time_APP](https://github.com/EmineSener/BtuSoftwareEngineeringTeam5/tree/main/PersonalityFreeTimeApp) folder for the project codes. 
 
-The application codes consist of three separate files: Model, View, and Controller. 
+The application codes consist of three separate files: [Model](https://github.com/EmineSener/BtuSoftwareEngineeringTeam5/tree/main/PersonalityFreeTimeApp/model), [View](https://github.com/EmineSener/BtuSoftwareEngineeringTeam5/tree/main/PersonalityFreeTimeApp/view), and [Controller](https://github.com/EmineSener/BtuSoftwareEngineeringTeam5/tree/main/PersonalityFreeTimeApp/controller). 
 
 You can learn more about all of them in the table below.
 
