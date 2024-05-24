@@ -163,6 +163,14 @@ A system that never pauses despite running many artificial intelligence applicat
 * Requirements document defines and documents the requirements of a project or product. You can access our requirements document [here]
 
 ## BreakBored | Our Meetings
+```
+We develop our project using the Agile method, an approach focused on flexibility and continuous collaboration
+in the software development process.
+The biggest factor in adopting the Agile method is small and frequent updates: making continuous progress
+with short-term iterations.
+For this reason, we hold meetings once a week and constantly improve our application.
+Below are all our meetings and their notes so far.
+```
 * [06.03.2024, Meeting #1](https://github.com/EmineSener/BtuSoftwareEngineeringTeam5/blob/main/Meetings/meeting1.md)
 * [08.03.2024, Meeting #2](https://github.com/EmineSener/BtuSoftwareEngineeringTeam5/blob/main/Meetings/meeting2.md)
 * [14.03.2024, Meeting #3](https://github.com/EmineSener/BtuSoftwareEngineeringTeam5/blob/main/Meetings/meeting3.md)
