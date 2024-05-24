@@ -5,6 +5,6 @@
 * Application interface design was discussed.
 * Application functions have been determined.
 
-TO DO
+# TO DO
 * Story cards will be prepared.
 * Bootstrap technology will be researched for project design.
